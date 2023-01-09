@@ -3,22 +3,28 @@ import { useState } from "react"
 function Counter(){
       
    let [count ,setCount] = useState(0)
+    function IncrementCount(e, change){
+        e.preventDefault()
 
-    function IncrementCount(){
-        if(count <20)
-        setCount(count + 1)}
-    
-    function DecrementCount(){
-        if(count >=1)
-        setCount(count - 1)
+        if(change ==="inc"){
+          if(count <10 ){
+            setCount(count + 1)
+          }
+        }
+        else{
+          if(count >0){
+            setCount(count - 1)
+          }
+        }
+
+          // change === "inc" ? setCount(count + 1) :setCount(count - 1)
     }
-
 
    return(
     <>
-    <button onClick={IncrementCount}>Increment</button>
+    <a href="" onClick={(e)=>IncrementCount(e ,"inc")}>Increment</a>
     <p>{count}</p>
-    <button onClick={DecrementCount}>Decrement</button>
+    <a  href ="" onClick={(e)=>IncrementCount(e ,"dec")}>Decrement</a>
     </>
     )
 }
