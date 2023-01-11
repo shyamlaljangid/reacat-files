@@ -13,7 +13,7 @@ function Counter(){
         }
         else{
           if(count >0){
-            setCount(count - 1)
+            setCount(count -  1)
           }
         }
 
