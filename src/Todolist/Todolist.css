@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+ul{
+    list-style: none;
+    
+}
+
+
+/* h1{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+} */
+ul li a{
+    padding: 1rem;
+
+}
+.line{
+    text-decoration: line-through;
+    pointer-events: none;
+    background-color: green;
+    color: aliceblue;
+    
+    border-radius: 10px;
+    margin: 0.5rem 20rem;
+   
+}
