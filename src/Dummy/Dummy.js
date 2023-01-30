@@ -7,9 +7,7 @@ function Dummy() {
   const [add, setadd] = useState("")
   const[movies ,setmovies] =useState([])
   let movies_path = "https://image.tmdb.org/t/p/original"
-  let movies_defalt = "https://image.tmdb.org/t/p/original/sjf3xjuofctDhZghJRzX1TiEjJe.jpg"
-
- 
+ let dummy_path ='https://image.tmdb.org/t/p/original/sjf3xjuofCtDhZghJRzXlTiEjJe.jpg' 
   function save(e) {
     setadd(e.target.value)
   }
@@ -17,10 +15,9 @@ function Dummy() {
   function submitform(e) {
     e.preventDefault()
     async function data() {
-      let response = await axios.get('https://api.themoviedb.org/3/search/movie?api_key=251ac7a461ba588030cfa89b0cd75329&language=en-US&query=' + add+ '&page=1&include_adult=false')
-      console.log(response.data.results)
-
+      let response = await axios.get('https://api.themoviedb.org/3/search/movie?api_key=b08ca4bd6eb0a9c75ea466b597c3f272&language=en-US&query=' +add+'&page=1&include_adult=false')
       setmovies(response.data.results)
+      console.log(response.data.results)
     }
       data()
   }
@@ -36,11 +33,13 @@ function Dummy() {
         </form>
       </div>
       <div>
+        
         {
           movies.map((movies ,index)=>{
             return(
+              
               <div key={index} className="flex-box">
-               <img src={null ? movies_defalt : movies_path+ movies.poster_path}></img>
+               <img src={  (movies.poster_path === null) ? dummy_path: movies_path + movies.poster_path}></img>
                <h3>{movies.title}</h3>
               </div>
             )

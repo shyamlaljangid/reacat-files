@@ -1,0 +1,54 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.front-page{
+ width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15rem 0;
+    background-color: rgb(204, 167, 238);
+}
+.front-page h1{
+    padding: 1rem;
+    font-size: 45px;
+}
+.front-page button{
+    padding: 0.8rem 2.5rem;
+    border-radius: 10px;
+}
+.second-page{
+    background-color: rgb(158, 107, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14rem 0;
+}
+.second-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+   
+   
+}
+.second-page .images{
+    border: 1px solid ;
+    margin: 1rem 2rem;
+}
+.second-page .images img{
+    width: 100px;
+    height: 100px;
+}
+
+.three-page {
+    height: 100vh;
+}
+.three-page .time-score{
+    display: flex;
+    justify-content: space-between;
+}

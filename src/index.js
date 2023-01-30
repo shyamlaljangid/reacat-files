@@ -5,7 +5,11 @@ import ReactDOM from 'react-dom/client';
 // import Counter from './App';
 // import Dummy from './Dummy/Dummy';
 // import Todolist from './Todolist/Todolist';
-import Netfilix from './Netfilix/Netfilix';
+// import Netflix from './Netflix/Netflix';
+// import Game from './gamestart/Game';
+// import Mouse from './MouseHower/Mouse';
+
+import App from './Router/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<>
@@ -14,11 +18,11 @@ root.render(<>
 
     {/* <Todolist /> */}
 
-  <Netfilix />
+  {/* <Netflix /> */}
+   {/* <Game /> */}
 
-
-
-
+    {/* <Mouse /> */}
+<App />
 
 
 
