@@ -16,8 +16,10 @@ function App() {
         <Route path='/' element={<Main />}>
         <Route path='/About' element={<About />}></Route>
         <Route path='/Services' element={<Services />}></Route>
-        <Route path='/Blog' element={<Blog />}></Route>
-        <Route path='/Blog/:id' element={<BlogServices />}></Route>
+        <Route path='/Blog' element={<Blog />}>
+        <Route path=':id' element={<BlogServices />}></Route>
+        </Route>
+       
         <Route path='/Contant' element={<Contant />}></Route>
         </Route>
        

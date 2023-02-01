@@ -1,11 +1,13 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 
 function Blog() {
 
     const [blog, setblog] = useState([])
+
+    
 
     useEffect(() => {
         async function data() {
@@ -33,10 +35,12 @@ function Blog() {
 
                         </div>
 
-
+                    
                     )
                 } )
+            
             }
+             <Outlet />
             </div>
     )
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import BookRouter from './Open Book/BookRouter';
 // import Tesla from './teslacar/Tesla';
 // import Axios from './Axios/Axios';
 // import Counter from './App';
@@ -9,7 +10,7 @@ import ReactDOM from 'react-dom/client';
 // import Game from './gamestart/Game';
 // import Mouse from './MouseHower/Mouse';
 
-import App from './Router/App';
+// import App from './Router/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<>
@@ -22,9 +23,9 @@ root.render(<>
    {/* <Game /> */}
 
     {/* <Mouse /> */}
-<App />
+{/* <App /> */}
 
-
+ <BookRouter />
 
 
 

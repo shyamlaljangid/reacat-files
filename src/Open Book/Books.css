@@ -1,0 +1,18 @@
+*{margin: 0;
+padding: 0.25rem;
+box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    padding: 3rem;
+
+}
+.box{
+   border: 1px solid ; 
+   margin: 1rem;
+   padding: 1rem;
+}
+.box img{
+    width: 250px;
+    height: 300px;
+}

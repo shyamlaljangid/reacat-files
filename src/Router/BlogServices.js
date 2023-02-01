@@ -4,9 +4,16 @@ import axios from 'axios'
 
 function BlogServices() {
     
+
+
+
+
+
     const [contant ,setcontant] =useState("")
 
     let {id} =useParams()
+
+    
 
     useEffect(() => {
         async function Fatchdata(){
