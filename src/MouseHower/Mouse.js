@@ -10,12 +10,12 @@ function Mouse() {
         //  console.log(e.target.clientWidth)   
         //  console.log(e.target.clientHeight)   
      console.log(e)
-        let width =  e.offsetX
-        let height = e.offsetY
+        let width =  e.nativeEvent.offsetX
+        let height = e.nativeEvent.offsetY
         // let x= Math.random()*(width)
         // let y = Math.random()*(height)
 
-    //  setsize( width + " * " + height )
+     setsize( width + " * " + height )
     
     }
   return (
