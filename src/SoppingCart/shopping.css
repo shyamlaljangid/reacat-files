@@ -1,0 +1,89 @@
+*{margin: 0%;
+padding: 0%;
+box-sizing: border-box;}
+.product img{
+    width: 250px;
+    height: 300px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 189);
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid ;
+   width: 22%;
+   margin: 2rem;
+   padding: 0.5rem;
+}
+.product a{
+    padding: 0.5rem 2rem;
+    background-color: rgb(231, 200, 159);
+    color: #000; 
+    border-radius: 10px;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: rgb(224, 158, 71);
+}
+header ul{
+    list-style: none;
+    display: flex
+}
+header ul li {
+    padding: 0.5rem 3rem;
+}
+header ul li a{
+    text-decoration: none;
+    background-color: rgb(3, 3, 3);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10.5rem;
+    background-color: antiquewhite;
+    
+}
+.submit input{
+    width: 50%;
+    
+    padding: 1rem;
+    margin: 10px;
+}
+.submit button{
+    padding: 0.9rem 2rem;
+    width: 25%;
+    margin: auto;
+    background-color: #000;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12.5rem 0;
+    background-color: rgb(203, 236, 225);
+}
+.about h1{
+    padding: 10px;
+}
+.about p{
+    width: 50%;
+    padding: 20px;
+}

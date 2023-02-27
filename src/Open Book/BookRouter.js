@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { BrowserRouter, Route ,Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Mainbook from './Mainbook'
 import About from './About'
 import Books from './Books'
@@ -11,27 +11,23 @@ function BookRouter() {
   return (
     <div>
 
-        <BrowserRouter >
+      <BrowserRouter >
         <Routes>
-            <Route path='/' element={<Mainbook />}>
+          <Route path='/' element={<Mainbook />}>
             <Route path='/About' element={<About />}></Route>
             <Route path='/Books' element={<BookLayout />}>
-            <Route index element={<Books
-            
-             />
-        
-        }></Route>
-            <Route path=':id' element={<Single />}></Route>
-            </Route>
-           
+              <Route index element={<Books />}></Route>
+              <Route path=':id' element={<Single />}></Route>
             </Route>
 
-            
-           
+          </Route>
+
+
+
         </Routes>
-        
-        
-        </BrowserRouter>
+
+
+      </BrowserRouter>
 
 
 

@@ -1,0 +1,41 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+form input{
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+button{
+    width: 150px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+/* form{ 
+     /* display: flex; */
+     /* flex-direction: column;  */
+     /* justify-content: center;  */
+     /* align-items: center;} */
+
+.box{
+
+    height: 100vh;
+    display: flex;
+    width: 100%;
+text-align: center;
+    flex-direction: column;    
+    background-color: rgb(166, 221, 221);
+}
+a{
+    padding: 0.5rem;
+    margin: 10px;
+}
+li{
+    padding: 1rem;
+}
+.line{
+    text-decoration: line-through;
+}
